@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.helde.trabalho1.FirstActivity">
+
+    <Button
+        android:id="@+id/botao1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botao1"/>
+
+    <Button
+        android:id="@+id/botao2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botao2"
+        android:layout_toRightOf="@+id/botao1"/>
+
+    <Button
+        android:id="@+id/botao3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Botao3"
+        android:layout_toRightOf="@+id/botao2"/>
+
+    <LinearLayout
+        android:id="@+id/seccao1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:background="#CDDC39">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/seccao2"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/seccao1"
+        android:background="#F44336"
+        android:orientation="vertical">
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/seccao3"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/seccao2"
+        android:background="#4CAF50"
+        android:orientation="vertical"></LinearLayout>
+
+</RelativeLayout>
