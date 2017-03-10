@@ -13,6 +13,7 @@
         android:paddingTop="@dimen/fab_margin">
 
         <EditText
+            android:id="@+id/InsertN"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:digits="0123456789."
@@ -30,8 +31,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:text="m"
-                />
+                android:textAllCaps="false"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
@@ -39,15 +39,17 @@
                 android:src="@drawable/ic_action_name"/>
 
             <Button
+                android:id="@+id/botaoMedida2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="4"
-                android:text="cm"/>
+                android:textAllCaps="false"/>
 
 
         </LinearLayout>
 
         <TextView
+            android:id="@+id/printTV"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingTop="@dimen/fab_margin"
@@ -59,6 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="Calcular"/>
+        android:text="Calcular"
+        android:onClick="btnCalcular"/>
 
 </RelativeLayout>
