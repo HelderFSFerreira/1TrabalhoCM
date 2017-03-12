@@ -16,7 +16,7 @@
             android:label="@string/title_activity_second"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ThirdActivity" />
-        <activity android:name=".Fourth"
+        <activity android:name=".FourthActivity"
             android:label="@string/my_activity_label"
             android:windowSoftInputMode="adjustResize">
 

@@ -1,14 +1,18 @@
 package com.example.helde.trabalho1;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Fourth extends AppCompatActivity {
+public class FourthActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -117,6 +121,46 @@ public class Fourth extends AppCompatActivity {
         e1.setText(srtE2);
         e2.setText(aux1);
 
+    }
 
+    // Menus
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_fourth, menu);
+        return true;
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        Intent i;
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.clean:
+                cleanBoxes();
+                return true;
+            case R.id.act1:
+                i = new Intent(this, FirstActivity.class);
+                startActivity(i);
+                return true;
+            case R.id.act2:
+                i = new Intent(this, SecondActivity.class);
+                startActivity(i);
+                return true;
+            case R.id.act3:
+                i = new Intent(this, ThirdActivity.class);
+                startActivity(i);
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private void cleanBoxes() {
+        EditText e1 = (EditText) findViewById(R.id.InsertN); // Change EditText text
+        EditText e2 = (EditText) findViewById(R.id.printTV);
+
+        e1.setText("");
+        e2.setText("");
     }
 }
