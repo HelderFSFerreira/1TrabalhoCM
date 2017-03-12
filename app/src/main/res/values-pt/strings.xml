@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Trabalho1</string>
+    <string name="title_activity_second">Segunda Actividade</string>
+    <string name="my_activity_label">Conversor</string>
+    <string name="inch">inch</string>
+    <string name="cm">cm</string>
+    <string name="calc">Calcular</string>
+    <string name="clean">Limar</string>
+    <string name="act1">Actividade 1</string>
+    <string name="act2">Actividade 2</string>
+    <string name="act3">Actividade 3</string>
+</resources>
