@@ -2,6 +2,7 @@
     <string name="app_name">Trabalho1</string>
     <string name="title_activity_second">SecondActivity</string>
     <string name="my_activity_label">Conversor</string>
-    <string name="m">m</string>
+    <string name="inch">inch</string>
     <string name="cm">cm</string>
+    <string name="calc">Calculate</string>
 </resources>
